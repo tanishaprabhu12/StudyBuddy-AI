@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudyBuddy AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+
+    <h2>StudyBuddy AI</h2>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <h1>Study Smarter with AI</h1>
+
+    <p>
+        Organize notes, generate quizzes,
+        remember everything and boost your productivity.
+    </p>
+
+    <button>Start Studying</button>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+
+    <h2>Upload Notes</h2>
+
+    <input type="file" name="file" required>
+
+    <button type="submit">
+        Upload
+    </button>
+
+</form>
+
+    <form method="POST" class="chat-box">
+
+        <h2>Ask StudyBuddy</h2>
+
+        <input
+            type="text"
+            name="question"
+            placeholder="Ask anything..."
+            required>
+
+        <button type="submit">
+            Ask AI
+        </button>
+
+        <div class="answer">
+
+{% for chat in chat_history %}
+
+<p><strong>You:</strong> {{ chat.question }}</p>
+
+<p><strong>StudyBuddy:</strong> {{ chat.answer }}</p>
+
+<hr>
+
+{% endfor %}
+
+</div>
+
+    </form>
+
+</section>
+
+</body>
+
+</html>
