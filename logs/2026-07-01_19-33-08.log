@@ -1,0 +1,89 @@
+2026-07-01T19:33:09.174060 [INFO    ] Log file created at: C:\Users\HP\PycharmProjects\StudyBuddy\logs\2026-07-01_19-33-08.log log_file=C:\Users\HP\PycharmProjects\StudyBuddy\logs\2026-07-01_19-33-08.log [cognee.shared.logging_utils]
+2026-07-01T19:33:09.175746 [WARNING ] Cognee 1.0 changes: New API — remember/recall/forget/improve (V1 add/cognify/search still work). Session memory enabled by default (CACHING=false to disable). Multi-user access control on by default (ENABLE_BACKEND_ACCESS_CONTROL=false to disable). Agents (@cognee.agent) auto-verified on registration. See https://docs.cognee.ai/ [cognee.shared.logging_utils]
+2026-07-01T19:33:09.176340 [INFO    ] Logging initialized python_version=3.13.7 structlog_version=25.5.0 cognee_version=1.2.2 os_info=Windows 11 (10.0.26200) database_path=C:\Users\HP\PycharmProjects\StudyBuddy\.cognee_system\databases [cognee.shared.logging_utils]
+2026-07-01T19:33:09.176616 [INFO    ] Database storage: C:\Users\HP\PycharmProjects\StudyBuddy\.cognee_system\databases [cognee.shared.logging_utils]
+2026-07-01T19:33:10.460982 [INFO    ] auth posture: authentication=required, multi_tenant=enabled (default (no env vars set)) [get_authenticated_user]
+Fresh database: creating schema and stamping at head.
+setup plugin alembic.autogenerate.schemas
+setup plugin alembic.autogenerate.tables
+setup plugin alembic.autogenerate.types
+setup plugin alembic.autogenerate.constraints
+setup plugin alembic.autogenerate.defaults
+setup plugin alembic.autogenerate.comments
+Using database: sqlite+aiosqlite:///C:\Users\HP\PycharmProjects\StudyBuddy\.cognee_system\databases/cognee_db
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Running stamp_revision  -> aa753a730673
+Stamped fresh relational schema at head.
+User 6626c133-bb85-432d-ac79-dc2cae4d2cec has registered.
+2026-07-01T19:33:25.283993 [INFO    ] Skipping LLM/embedding connection tests (COGNEE_SKIP_CONNECTION_TEST is set). [cognee.shared.logging_utils]
+2026-07-01T19:33:25.557916 [INFO    ] Pipeline run started: `8e721c6f-b9af-54bb-ae29-3a6a99c1a37a` [run_tasks_with_telemetry()]
+2026-07-01T19:33:25.657484 [INFO    ] Coroutine task started: `resolve_data_directories` [run_tasks_base]
+2026-07-01T19:33:25.759775 [INFO    ] Coroutine task started: `ingest_data` [run_tasks_base]
+2026-07-01T19:33:26.257466 [INFO    ] Registered loader: pypdf_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.259945 [INFO    ] Registered loader: text_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.260778 [INFO    ] Registered loader: image_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.261270 [INFO    ] Registered loader: audio_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.264060 [INFO    ] Registered loader: csv_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.265137 [INFO    ] Registered loader: advanced_pdf_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.268513 [INFO    ] Registered loader: docling_loader [cognee.infrastructure.loaders.LoaderEngine]
+2026-07-01T19:33:26.318560 [INFO    ] Coroutine task completed: `ingest_data` [run_tasks_base]
+2026-07-01T19:33:26.392225 [INFO    ] Coroutine task completed: `resolve_data_directories` [run_tasks_base]
+2026-07-01T19:33:26.463780 [INFO    ] Pipeline run completed: `8e721c6f-b9af-54bb-ae29-3a6a99c1a37a` [run_tasks_with_telemetry()]
+2026-07-01T19:33:28.168257 [INFO    ] Ladybug database closed successfully [cognee.shared.logging_utils]
+2026-07-01T19:33:28.173405 [INFO    ] No ontology file provided. No owl ontology will be attached to the graph. [OntologyAdapter]
+2026-07-01T19:33:28.226091 [INFO    ] Log file created at: C:\Users\HP\PycharmProjects\StudyBuddy\logs\2026-07-01_19-33-08.log log_file=C:\Users\HP\PycharmProjects\StudyBuddy\logs\2026-07-01_19-33-08.log [cognee.shared.logging_utils]
+2026-07-01T19:33:28.226946 [WARNING ] Cognee 1.0 changes: New API — remember/recall/forget/improve (V1 add/cognify/search still work). Session memory enabled by default (CACHING=false to disable). Multi-user access control on by default (ENABLE_BACKEND_ACCESS_CONTROL=false to disable). Agents (@cognee.agent) auto-verified on registration. See https://docs.cognee.ai/ [cognee.shared.logging_utils]
+2026-07-01T19:33:28.227725 [INFO    ] Logging initialized python_version=3.13.7 structlog_version=25.5.0 cognee_version=1.2.2 os_info=Windows 11 (10.0.26200) database_path=C:\Users\HP\PycharmProjects\StudyBuddy\.cognee_system\databases [cognee.shared.logging_utils]
+2026-07-01T19:33:28.228089 [INFO    ] Database storage: C:\Users\HP\PycharmProjects\StudyBuddy\.cognee_system\databases [cognee.shared.logging_utils]
+2026-07-01T19:33:28.230405 [WARNING ] Could not get tokenizer from HuggingFace due to: No module named 'transformers' [LiteLLMEmbeddingEngine]
+2026-07-01T19:33:28.230833 [INFO    ] Switching to TikToken default tokenizer. [LiteLLMEmbeddingEngine]
+2026-07-01T19:33:33.763549 [INFO    ] Pipeline run started: `3acf770f-5095-57d0-8cc9-0169eb805270` [run_tasks_with_telemetry()]
+2026-07-01T19:33:33.823167 [INFO    ] Coroutine task started: `classify_documents` [run_tasks_base]
+2026-07-01T19:33:33.885494 [INFO    ] Async Generator task started: `extract_chunks_from_documents` [run_tasks_base]
+2026-07-01T19:33:34.049561 [INFO    ] Coroutine task started: `extract_graph_and_summarize` [run_tasks_base]
+2026-07-01T19:33:39.246152 [INFO    ] No close match found for 'law' in category 'classes' [OntologyAdapter]
+2026-07-01T19:33:39.248808 [INFO    ] No close match found for 'newtons first law' in category 'individuals' [OntologyAdapter]
+2026-07-01T19:33:39.251269 [INFO    ] No close match found for 'concept' in category 'classes' [OntologyAdapter]
+2026-07-01T19:33:39.252264 [INFO    ] No close match found for 'object' in category 'individuals' [OntologyAdapter]
+2026-07-01T19:33:39.253237 [INFO    ] No close match found for 'external force' in category 'individuals' [OntologyAdapter]
+2026-07-01T19:33:39.255278 [INFO    ] Coroutine task started: `add_data_points` [run_tasks_base]
+2026-07-01T19:33:39.372088 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': '4d8fbab1-a9a3-513f-9019-119bdb6c02ef', 'nodes_extracted': 1, 'edges_extracted': 0} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.389968 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': 'd2a381fa-3658-5ca6-ada9-2109cfc9331d', 'nodes_extracted': 1, 'edges_extracted': 0} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.390605 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': 'b4e3ad4f-d8d8-5e62-a185-f53ae5040b16', 'nodes_extracted': 2, 'edges_extracted': 1} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.395800 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': 'f7096e87-1b46-5726-bd45-f31f6305fe2e', 'nodes_extracted': 1, 'edges_extracted': 1} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.400423 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': 'c3310ddc-3671-573a-b484-9d4dc556840b', 'nodes_extracted': 1, 'edges_extracted': 0} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.400951 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': 'dabe0d6e-0139-5cac-95a6-3b56a28ac92a', 'nodes_extracted': 5, 'edges_extracted': 5} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.401519 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': '0fb461c6-0c01-54a7-9300-ed168420e59e', 'nodes_extracted': 7, 'edges_extracted': 9} [cognee.shared.logging_utils]
+2026-07-01T19:33:39.401920 [INFO    ] Completed graph extraction for DataPoint extra={'datapoint_id': '48e51970-9d69-5708-8b73-dd8d5e8a35a7', 'nodes_extracted': 8, 'edges_extracted': 10} [cognee.shared.logging_utils]
+2026-07-01T19:33:47.624752 [INFO    ] Coroutine task started: `extract_dlt_fk_edges` [run_tasks_base]
+2026-07-01T19:33:47.776720 [INFO    ] Coroutine task completed: `extract_dlt_fk_edges` [run_tasks_base]
+2026-07-01T19:33:48.020278 [INFO    ] Coroutine task completed: `add_data_points` [run_tasks_base]
+2026-07-01T19:33:48.173412 [INFO    ] Coroutine task completed: `extract_graph_and_summarize` [run_tasks_base]
+2026-07-01T19:33:48.289868 [INFO    ] Async Generator task completed: `extract_chunks_from_documents` [run_tasks_base]
+2026-07-01T19:33:48.386501 [INFO    ] Coroutine task completed: `classify_documents` [run_tasks_base]
+2026-07-01T19:33:48.468660 [INFO    ] Pipeline run completed: `3acf770f-5095-57d0-8cc9-0169eb805270` [run_tasks_with_telemetry()]
+2026-07-01T19:33:50.002131 [INFO    ] Ladybug database closed successfully [cognee.shared.logging_utils]
+2026-07-01T19:33:50.419875 [INFO    ] remember: running self-improvement on dataset 'main_dataset' [remember]
+2026-07-01T19:33:51.785426 [INFO    ] Retrieving full graph. [CogneeGraph]
+2026-07-01T19:33:51.839912 [INFO    ] Retrieved 8 nodes and 10 edges in 0.05 seconds [cognee.shared.logging_utils]
+2026-07-01T19:33:51.886156 [INFO    ] Graph projection completed: 8 nodes, 10 edges in 0.05s [CogneeGraph]
+2026-07-01T19:33:52.007607 [INFO    ] Ladybug database closed successfully [cognee.shared.logging_utils]
+2026-07-01T19:33:52.114397 [INFO    ] Pipeline run started: `03eef86d-8dc4-5793-82a1-7bdebfc350ee` [run_tasks_with_telemetry()]
+2026-07-01T19:33:52.175338 [INFO    ] Coroutine task started: `index_data_points` [run_tasks_base]
+2026-07-01T19:33:52.467416 [INFO    ] Coroutine task completed: `index_data_points` [run_tasks_base]
+2026-07-01T19:33:52.531867 [INFO    ] Pipeline run completed: `03eef86d-8dc4-5793-82a1-7bdebfc350ee` [run_tasks_with_telemetry()]
+2026-07-01T19:33:53.088786 [INFO    ] Ladybug database closed successfully [cognee.shared.logging_utils]
+2026-07-01T19:33:53.229951 [INFO    ] query_router: no patterns matched, default=GRAPH_COMPLETION query="What is Newton's First Law?" [query_router]
+2026-07-01T19:34:00.138777 [INFO    ] Vector collection retrieval completed: Retrieved distances from 6 collections in 4.38s [cognee.shared.logging_utils]
+2026-07-01T19:34:00.139911 [INFO    ] Retrieving ID-filtered graph from database. [CogneeGraph]
+2026-07-01T19:34:00.166573 [INFO    ] ID-filtered retrieval: 8 nodes and 10 edges in 0.03s [cognee.shared.logging_utils]
+2026-07-01T19:34:00.168305 [INFO    ] Graph projection completed: 8 nodes, 10 edges in 0.00s [CogneeGraph]
+2026-07-01T19:34:00.173481 [INFO    ] Completed resolving edges to text extra={'node_count': 8, 'connection_count': 10} [cognee.shared.logging_utils]
+2026-07-01T19:34:03.722331 [INFO    ] Ladybug database closed successfully [cognee.shared.logging_utils]
+2026-07-01T19:34:03.912419 [INFO    ] recall: 1 results across sources=['graph'] (session=-) [recall]
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000231CE746900>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x00000231CFEECC90>, 649618.6381524), (<aiohttp.client_proto.ResponseHandler object at 0x0000023212554BB0>, 649619.8466789), (<aiohttp.client_proto.ResponseHandler object at 0x00000231CFEECB40>, 649619.8467415), (<aiohttp.client_proto.ResponseHandler object at 0x00000231CE7B8830>, 649619.8467722), (<aiohttp.client_proto.ResponseHandler object at 0x000002321246DA90>, 649619.8467971), (<aiohttp.client_proto.ResponseHandler object at 0x00000232126F5780>, 649620.5180144), (<aiohttp.client_proto.ResponseHandler object at 0x00000232126F58D0>, 649629.6899778)])']
+connector: <aiohttp.connector.TCPConnector object at 0x00000231CE746A50>
